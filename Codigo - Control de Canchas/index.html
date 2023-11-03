@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <title>Control de Canchas</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js"></script>  
+    <meta  name="viewport" content="width=device-width, initial-scale=1.0"   
+  </head>
+  
+  <body>
+    <span style="color: whitesmoke;">
+    <h1><center><strong>COMPLEJO DEPORTIVO SANDOVAL</strong></center></h1>
+    <span style="color: burlywood;">
+    <h2><center>CONTROL DE TIEMPOS POR CANCHAS</center></h2>
+    
+    <div class="timer-container">
+      <img src="imagenes/boton1.png" width="200px" height="80px"> 
+      <div class="timer" id="timer1">00:00:00:00</div>
+      <button class="start-btn" id="Iniciar1" onclick="startTimer(1), desactivaIniciar1(), activaDetener1(), activaReiniciar1(), mostrarBoton()">Iniciar</button>
+      <button class="stp-btn" id="Detener1" disabled="disabled" onclick="stopTimer(1), desactivaDetener1(), activaIniciar1()">Detener</button>
+      <button class="reset-btn" id="Reiniciar1" disabled="disabled" onclick="activaIniciar1(), desactivaReiniciar1(), desactivaDetener1(), resetTimer(1)">Reiniciar</button>
+    </div>
+
+    <div class="timer-container">
+      <img src="imagenes/boton2.png" width="200px" height="80px"> 
+      <div class="timer" id="timer2">00:00:00:00</div>
+      <button class="start-btn" id="Iniciar2" onclick="startTimer(2), desactivaIniciar2(), activaDetener2(), activaReiniciar2(), mostrarBoton()">Iniciar</button>
+      <button class="stp-btn" id="Detener2" disabled="disabled" onclick="stopTimer(2), desactivaDetener2(), activaIniciar2()">Detener</button>
+      <button class="reset-btn" id="Reiniciar2" disabled="disabled" onclick="activaIniciar2(), desactivaReiniciar2(), desactivaDetener2(), resetTimer(2)">Reiniciar</button>
+    </div>
+ 
+    <div class="timer-container">
+        <img src="imagenes/boton3.png" width="200px" height="80px"> 
+        <div class="timer" id="timer3">00:00:00:00</div>
+        <button class="start-btn" id="Iniciar3" onclick="startTimer(3), desactivaIniciar3(), activaDetener3(), activaReiniciar3(), mostrarBoton()">Iniciar</button>
+        <button class="stp-btn" id="Detener3" disabled="disabled" onclick="stopTimer(3), desactivaDetener3(), activaIniciar3()">Detener</button>
+        <button class="reset-btn" id="Reiniciar3" disabled="disabled" onclick="activaIniciar3(), desactivaReiniciar3(), desactivaDetener3(), resetTimer(3)">Reiniciar</button>
+    </div>  
+
+    <div class="timer-container">
+      <img src="imagenes/boton4.png" width="200px" height="80px"> 
+      <div class="timer" id="timer4">00:00:00:00</div>
+      <button class="start-btn" id="Iniciar4" onclick="startTimer(4), desactivaIniciar4(), activaDetener4(), activaReiniciar4(), mostrarBoton()">Iniciar</button>
+      <button class="stp-btn" id="Detener4" disabled="disabled" onclick="stopTimer(4), desactivaDetener4(), activaIniciar4()">Detener</button>
+      <button class="reset-btn" id="Reiniciar4" disabled="disabled" onclick="activaIniciar4(), desactivaReiniciar4(), desactivaDetener4(), resetTimer(4)">Reiniciar</button>
+    </div>
+    
+    <div class="timer-container">
+      <div id="limpiar">     
+      <button class="limpiar-btn" onclick="resetTimer(1), resetTimer(2), resetTimer(3), resetTimer(4)
+      desactivaDetener1(), desactivaDetener2(), desactivaDetener3(), desactivaDetener4()
+      desactivaReiniciar1(), desactivaReiniciar2(), desactivaReiniciar3(), desactivaReiniciar4()
+      activaIniciar1(), activaIniciar2(), activaIniciar3(), activaIniciar4(), ocultarBoton()">
+      <span style="color: aliceblue;">LIMPIAR</span></button> 
+      </div>
+    </div>  
+  </body>
+</html>
